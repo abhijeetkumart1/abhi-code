@@ -117,27 +117,138 @@
 //     return 0;
 // }
 //Sum of n even numbers
-#include<iostream>
-using namespace std;
-int getEvenSum(int n){
-    int sum=0;
-    for(int i=2;i<=n;i=i+2){
-        sum=sum+i;
-    }
-    return sum;
-}
-int main(){
-    int n;
-    cout<<"Enter the value of n "<<endl;
-    cin>>n;
-    int ans=getEvenSum(n);
-    cout<<"Sum upto "<< n <<" is "<<ans<<endl;
-    return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int getEvenSum(int n){
+//     int sum=0;
+//     for(int i=2;i<=n;i=i+2){
+//         sum=sum+i;
+//     }
+//     return sum;
+// }
+// int main(){
+//     int n;
+//     cout<<"Enter the value of n "<<endl;
+//     cin>>n;
+//     int ans=getEvenSum(n);
+//     cout<<"Sum upto "<< n <<" is "<<ans<<endl;
+//     return 0;
+// }
 
 //Display area of a circle
+// #include<iostream>
+// using namespace std;
+// float circle_area(float radius){
+//     float area =3.14*radius*radius;
+//     return area;
+// }
+// int main(){
+//     float radius;
+//     cout<<"Enter radius : ";
+//     cin>>radius;
+//     float area=circle_area(radius);
+//     cout<<"Area of circle is "<<area<<endl;
+// }
+
 //write a function to display given no is odd or even
-//write a function to find the factorial of a number 
-// check the given no is prime or not
-//print all no from 1 to n
-//LC Reverse an Integer
+// #include<iostream>
+// using namespace std;
+// bool checkEven(int n){
+//     if(n%2==0){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+
+// int main(){
+//     int n;
+//     cout<<"Enter the value of n : ";
+//     cin>>n;
+//     bool isEven=checkEven(n);
+//     if(isEven){
+//         cout<<n<<" is Even number";
+//     }
+//     else{
+//         cout<<n<<" is odd number";
+//     }
+// }
+// //write a function to find the factorial of a number 
+// #include<iostream>
+// using namespace std;
+// int fact(int n){
+//     int fact=1;
+//     for(int i=1;i<=n;i++){
+//         fact=fact*i;
+//     }
+//     return fact;
+// }
+// int main(){
+//     int n;
+//     cin>>n;
+//     int ans=fact(n);
+//     cout<<"Factorial of "<<n<<" is "<<ans;
+// }
+// // check the given no is prime or not
+// #include<iostream>
+// using namespace std;
+// bool checkPrime(int n){
+//     int i=2;
+//     for(i=2;i<n;i++){
+//         if(n%i==0){
+//             return false;
+//         }
+//         return true;
+//     }
+// }
+// int main(){
+//     int n;
+//     cin >>n;
+//     bool isPrime=checkPrime(n);
+//     if(isPrime){
+//         cout<<"Prime";
+//     }
+//     else{
+//         cout<<"Not a Prime ";
+//     }
+// }
+// //print all no from 1 to n
+// #include<iostream>
+// using namespace std;
+// bool checkPrime(int n){
+//     int i=2;
+//     for(i=2;i<n;i++){
+//         if(n%i==0){
+//             return false;
+//         }
+//         return true;
+//     }
+// }
+// int main(){
+//     int n;
+//     cin >>n;
+//     for(int i=2;i<=n;i++){
+//         bool isPrime=checkPrime(n);
+//         if(isPrime){
+//             cout<<i<<" ";
+//         }
+//     }
+// }
+// #include<iostream>
+// using namespace std;
+// int main(){
+    
+// }
+// //LC Reverse an Integer
+// #include<iostream>
+// using namespace std;
+// int main(){
+    
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+// }
