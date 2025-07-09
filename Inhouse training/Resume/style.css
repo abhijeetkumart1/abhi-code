@@ -5,3 +5,11 @@ h1{
 h2{
     color: red;
 }
+body{
+    font-family: Arial,sans-serif;
+    margin: 40px;
+    
+}
+hr{
+    border: 1px solid black;
+}
