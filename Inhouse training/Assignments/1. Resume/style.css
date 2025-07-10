@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.role {
+  font-weight: bold;
+  color: #007acc;
+  margin: 5px 0;
+}
+
+.contact {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 2px 0;
+}
+
+section {
+  margin: 30px 0;
+}
+
+h2 {
+  color: #007acc;
+  margin-bottom: 10px;
+  border-left: 4px solid #007acc;
+  padding-left: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* ✅ Skill-line Format */
+.skill-line {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.skill-line strong {
+  display: inline-block;
+  width: 200px;
+  color: #333; /* default black/dark grey */
+  font-weight: 600;
+}
+
+
+.skill-line span {
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 40px;
+}
