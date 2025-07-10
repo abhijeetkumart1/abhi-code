@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internship Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>📝 Internship Registration Form</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required />
+
+      <label for="college">College Name</label>
+      <input type="text" id="college" placeholder="Enter your college name" required />
+
+      <label for="branch">Branch</label>
+      <select id="branch" required>
+        <option value="">Select your branch</option>
+        <option value="cse">CSE</option>
+        <option value="it">IT</option>
+        <option value="ece">ECE</option>
+        <option value="mech">Mechanical</option>
+      </select>
+
+      <label for="intern">Preferred Internship Domain</label>
+      <input type="text" id="intern" placeholder="e.g., Web Dev, Python, DevOps" required />
+
+      <label for="message">Why are you interested?</label>
+      <textarea id="message" rows="4" placeholder="Write in short..." required></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
