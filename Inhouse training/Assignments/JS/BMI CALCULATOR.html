@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+</head>
+<body>
+    <button onclick="bmi()">BMI Calculator</button>
+    <script>
+        function bmi() {
+            let weight = parseFloat(prompt("Enter your weight in kg:"));
+            let height = parseFloat(prompt("Enter your height in meters:"));
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                alert("Please enter valid weight and height.");
+                return;
+            }
+            let bmiValue = weight / (height * height);
+            alert("Your BMI is: " + bmiValue.toFixed(2));
+        }                       
+
+    </script>
+</body>
+</html>
