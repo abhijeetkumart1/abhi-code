@@ -1,0 +1,18 @@
+#weather-box {
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.sunny {
+  background-color: gold;
+  color: darkorange;
+}
+.rainy {
+  background-color: lightblue;
+  color: navy;
+}
+.cloudy {
+  background-color: lightgray;
+  color: black;
+}

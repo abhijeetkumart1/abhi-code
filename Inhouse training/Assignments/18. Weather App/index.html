@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+  <style>
+    body { text-align: center; padding: 50px; transition: 0.3s; }
+    .sunny { background: #FFD700; }
+    .rainy { background: #87CEFA; }
+    .cloudy { background: #C0C0C0; }
+  </style>
+</head>
+<body>
+  <h2>Choose Weather</h2>
+  <select onchange="changeWeather(this.value)">
+    <option value="">--Select--</option>
+    <option value="sunny">Sunny</option>
+    <option value="rainy">Rainy</option>
+    <option value="cloudy">Cloudy</option>
+  </select>
+
+  <script>
+    function changeWeather(w) {
+      document.body.className = w;
+    }
+  </script>
+</body>
+</html>

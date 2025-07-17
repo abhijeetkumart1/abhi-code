@@ -1,0 +1,4 @@
+input[type="password"], input[type="text"] {
+  padding: 8px;
+  margin: 5px;
+}

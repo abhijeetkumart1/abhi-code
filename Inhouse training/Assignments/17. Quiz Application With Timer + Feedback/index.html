@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+  </style>
+</head>
+<body>
+  <div id="quiz">
+    <h2 id="question">Loading...</h2>
+    <div id="options"></div>
+    <p id="timer"></p>
+  </div>
+  <script>
+    const quiz = [
+      { q: "2+2=?", a: ["3", "4", "5"], correct: 1 },
+      { q: "Capital of France?", a: ["Berlin", "London", "Paris"], correct: 2 }
+    ];
+    let i = 0, score = 0, t;
+
+    function load() {
+      if (i >= quiz.length) return finish();
+      const q = quiz[i];
+      document.getElementById("question").textContent = q.q;
+      const opt = document.getElementById("options");
+      opt.innerHTML = "";
+      q.a.forEach((ans, idx) => {
+        const b = document.createElement("button");
+        b.textContent = ans;
+        b.onclick = () => check(idx);
+        opt.appendChild(b);
+      });
+      let time = 10;
+      document.getElementById("timer").textContent = "Time: " + time;
+      t = setInterval(() => {
+        if (--time <= 0) { clearInterval(t); next(); }
+        document.getElementById("timer").textContent = "Time: " + time;
+      }, 1000);
+    }
+
+    function check(ans) {
+      clearInterval(t);
+      if (ans === quiz[i].correct) score++;
+      next();
+    }
+
+    function next() {
+      i++;
+      load();
+    }
+
+    function finish() {
+      document.getElementById("quiz").innerHTML = `<h2>Score: ${score}/${quiz.length}</h2>`;
+    }
+
+    load();
+  </script>
+</body>
+</html>

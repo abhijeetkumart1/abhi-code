@@ -1,0 +1,17 @@
+   :root {
+      --bg: white;
+      --text: black;
+    }
+    .dark-mode {
+      --bg: #121212;
+      --text: white;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: sans-serif;
+      transition: 0.4s;
+    }
+    button {
+      margin: 20px;
+    }

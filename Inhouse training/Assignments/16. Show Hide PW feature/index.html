@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+  <style>
+    body { font-family: Arial; max-width: 400px; margin: auto; }
+    li.done { text-decoration: line-through; }
+  </style>
+</head>
+<body>
+  <h2>To-Do List</h2>
+  <input id="task" placeholder="New task" />
+  <button onclick="addTask()">Add</button>
+  <ul id="list"></ul>
+
+  <script>
+    const list = document.getElementById("list");
+    const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+    function render() {
+      list.innerHTML = "";
+      tasks.forEach((t, i) => {
+        const li = document.createElement("li");
+        li.textContent = t.text;
+        li.className = t.done ? "done" : "";
+        li.onclick = () => { tasks[i].done = !tasks[i].done; save(); };
+        list.appendChild(li);
+      });
+    }
+
+    function addTask() {
+      const val = document.getElementById("task").value;
+      if (val) tasks.push({ text: val, done: false });
+      document.getElementById("task").value = "";
+      save();
+    }
+
+    function save() {
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+      render();
+    }
+
+    render();
+  </script>
+</body>
+</html>
