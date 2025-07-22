@@ -91,3 +91,41 @@ footer{
     padding: 20px;
     font-size: 14px;
 }
+
+.movie-section {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 30px;
+    text-align: left;
+}
+
+.movie-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.movie-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.movie-card {
+    min-width: 180px;
+    background-color: #222;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-card p {
+    padding: 10px;
+    font-size: 14px;
+}
