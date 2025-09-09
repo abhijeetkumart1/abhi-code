@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>University Registration Form</h1>
+    <p>Please fill out the form below to register.</p>
+    <hr>
+  
+    <form>
+        <h2>Personal Details</h2>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname"  placeholder="e.g:Abhi" reuired>
+        <br><br>
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="e.g:Kumar" required>
+        <br><br>
+        <label for="DOB">Date of Birth</label>
+        <input type="date" id="DOB" name="DOB" required>
+        <br><br>
+        <label >Gender :</label>
+        <br>
+        <label for="gender">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <br>
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <br><br>
+        <p>Upload Your Photo</p>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        <br><br>
+        <hr>
+        <h2>Contact Information</h2>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="e.g:abhi@example.com" required>
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g:+1234567890" required>
+        <br><br>
+        <label for="address">Mailing Address:</label>
+        <br>
+        <textarea id="address" name="address" placeholder="Street Address,City,State,ZIP Code" required></textarea>
+        <br><br>
+
+        <hr>
+
+        <h2>Academic Information</h2>
+        <label for="course">Select Your Course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Choose a course--</option>
+            <option value="computer-science">Computer Science</option>
+            <option value="engineering">Engineering</option>
+            <option value="business">Business</option>
+            <option value="arts">Arts</option>
+        </select>
+        <br><br>
+
+        <label >Extracurricular Interests:</label>
+        <br>
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <br>
+        <label for="music">Music & Arts</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <br>
+        <label for="arts">Technology Clubs</label>
+        <input type="checkbox" id="arts" name="interests" value="technology clubs">
+        <br>
+        <label for="volunteer">Volunteering</label>
+        <input type="checkbox" id="volunteer" name="interests" value="volunteering">
+        <br><br>
+
+        <hr>
+
+        <h2>Create Your Account</h2>
+        <label for="password">Create a Password</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="">Security Question:</label>
+        <select id="security-question" name="security-question" required>
+            <option value="">--Select a question--</option>
+            <option value="pet-name">What is your pet's name?</option>
+            <option value="mother-maiden">What is your mother's maiden name?</option>
+            <option value="first-school">What was the name of your first school?</option>
+        </select>
+        <br><br>
+        <label for="security-answer">Answer:</label>
+        <input type="text" id="security-answer" name="security-answer" required>
+        <br><br>
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to the terms and conditions.
+        </label>
+        <br><br>
+        <hr>
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+    </form>
+
+</body>
+</html>
