@@ -1,0 +1,50 @@
+/* tag Element Selector
+h1{
+    background-color: pink;
+}
+ul{
+    background-color: yellow;
+} */
+
+/* ID Selector
+#first{
+    background-color: blue;
+}
+#second{
+    background-color: pink;
+} */
+
+/* Class Selector */
+/* .third{
+    background-color: green;
+}
+.forth{
+    background-color: blueviolet;
+} */
+
+/* Group based selection */
+/* h1,.forth,#first{
+    background-color: aqua;
+} */
+
+/* h1{
+    background-color: #639747;
+} */
+
+/* font */
+h1{
+    font-size: 80px;
+}
+ul{
+    font-size: 20px;
+}
+li{
+    font-size: 1em;
+}
+h2{
+    font-size: 2rem;
+    font-size: 2vh;
+    font-size: 3vh;
+    font-size: 150%;    
+
+}

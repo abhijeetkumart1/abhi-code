@@ -1,0 +1,17 @@
+h1{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black;
+*/
+    border: 5px solid black;  /*shorthand property*/
+    padding: 10px;
+    margin:10px;
+
+}
+h2{
+    background-color: blue;
+}
